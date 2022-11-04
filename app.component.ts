@@ -145,13 +145,13 @@ export class AppComponent {
       .filterEvents(event.data.StartTime, event.data.EndTime)
       .filter(
         (x) =>
-          x.ConsultantID == event.data.ConsultantID && x.id != event.data.id
+          x.ConsultantID == event.data.ConsultantID && x.Id != event.data.Id
       )[0]; //to find the overlapped events on dropping the event.
     let eventsToBeReschedule = this.scheduleObj
       .getEvents(event.data.StartTime)
       .filter((x) => x.ConsultantID == event.data.ConsultantID); // get the events to be reschedule due to overlap
     let overlapEventIndex = eventsToBeReschedule.findIndex(
-      (x) => x.id == overlapEvent.id
+      (x) => x.Id == overlapEvent.Id
     );
     if (overlapEventIndex != -1) {
       eventsToBeReschedule.splice(overlapEventIndex, 1);
@@ -261,9 +261,9 @@ export class AppComponent {
             Name: filteredData[0].Name,
             StartTime: cellData.startTime,
             EndTime: cellData.endTime,
-            /*IsAllDay: cellData.isAllDay,*/
+            IsAllDay: cellData.isAllDay,
             Description: filteredData[0].Description,
-            /*DepartmentID: resourceDetails.resourceData.GroupId,*/
+            DepartmentID: resourceDetails.resourceData.GroupId,
             ConsultantID: resourceDetails.resourceData.Id,
           };
           this.scheduleObj.openEditor(eventData, 'Add', true);

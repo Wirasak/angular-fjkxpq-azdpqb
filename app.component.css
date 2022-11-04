@@ -81,6 +81,11 @@
   width: 220px;
 }
 
+.treeview-external-drag li .e-list-text {
+  white-space: normal;
+  word-break: break-all;
+}
+
 .treeview-external-drag .e-list-parent,
 .treeview-external-drag.e-rtl .e-list-parent,
 .e-bigger .treeview-external-drag .e-list-parent,
@@ -106,7 +111,7 @@
 .e-bigger .treeview-external-drag .e-list-item.e-hover > .e-fullrow,
 .e-bigger .treeview-external-drag .e-list-item.e-active > .e-fullrow,
 .e-bigger .treeview-external-drag .e-list-item.e-active.e-hover > .e-fullrow {
-  background-color: transparent;
+  background-color: #c0c0c0;
   border-color: transparent;
   box-shadow: none !important;
 }
@@ -229,11 +234,13 @@
 }
 
 #treeparent {
-  width: 225px;
-  min-height: 250px;
-  max-height: auto;
-  border: 1px solid #bbbbbb;
-  margin: 0 auto;
+  display: block;
+  max-width: 400px;
+  max-height: 320px;
+  margin: auto;
+  overflow: auto;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
 }
 .e-mask .e-input {
   border: none;
