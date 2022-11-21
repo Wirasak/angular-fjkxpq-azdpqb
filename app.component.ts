@@ -66,25 +66,47 @@ export class AppComponent {
   public consultantDataSource: Record<string, any>[] = [
     {
       Text: 'Chao Phraya (J)',
-      Id: 1,
-      GroupId: 1,
+      Id: 104,
+      GroupId: 104,
       Color: '#bbdc00',
       Designation: '',
     },
     {
       Text: 'Krathong (J)',
-      Id: 2,
-      GroupId: 2,
+      Id: 105,
+      GroupId: 105,
       Color: '#9e5fff',
       Designation: '',
     },
     {
-      Text: 'T-18 (T)',
-      Id: 3,
-      GroupId: 3,
-      Color: '#bbdc00',
+      Text: 'UBON-1',
+      Id: 106,
+      GroupId: 106,
+      Color: '#6495ED',
       Designation: '',
     },
+    /* ,
+    {
+      Text: 'T-15 (T)',
+      Id: 101,
+      GroupId: 101,
+      Color: '#2ECC71',
+      Designation: '',
+    },
+    {
+      Text: 'T-16 (T)',
+      Id: 102,
+      GroupId: 102,
+      Color: '#E67E22',
+      Designation: '',
+    },
+    {
+      Text: 'T-18 (T)',
+      Id: 103,
+      GroupId: 103,
+      Color: '#FF7F50',
+      Designation: '',
+    },*/
   ];
 
   public group: GroupModel = {
